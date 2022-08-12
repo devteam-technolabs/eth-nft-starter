@@ -1,19 +1,11 @@
-# `eth-nft-starter-NFT-Marketplace`
 
-This Project is a fork of Ethereum Boilerplate and demostrates how you can build your own NFT Marketplace. This project of course work on any EVM-compatible blockchain such as Polygon, Avalanche, Binance Smart Chain and other such chains.
+# Quick Start
 
-![Preview](preview.gif)
-
-# ⭐️ `Star us`
-If this boilerplate helps you build Ethereum dapps faster - please star this project, every star makes us very happy!
-
-# 🚀 Quick Start
-
-📄 Clone or fork `ethereum-nft-marketplace-boilerplate`:
+Clone or fork `ethereum-nft-marketplace-boilerplate`:
 ```sh
 git clone https://github.com/devteam-technolabs/eth-nft-starter.git
 ```
-💿 Install all dependencies:
+Install all dependencies:
 ```sh
 cd ethereum-nft-marketplace-boilerplate
 yarn install 
@@ -25,13 +17,13 @@ REACT_APP_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
 REACT_APP_MORALIS_SERVER_URL = https://xxxxxx.grandmoralis.com:2053/server
 ```
 
-🔎 Locate the MoralisDappProvider in `src/providers/MoralisDappProvider/MoralisDappProvider.js` and paste the deployed marketplace smart contract address and ABI
+Locate the MoralisDappProvider in `src/providers/MoralisDappProvider/MoralisDappProvider.js` and paste the deployed marketplace smart contract address and ABI
 ```jsx
 const [contractABI, setContractABI] = useState();
 const [marketAddress, setMarketAddress] = useState();
 ```
 
-🔃 Sync the `MarketItemCreated` event `/src/contracts/marketplaceBoilerplate.sol` contract with your Moralis Server, making the tableName `MarketItems`
+Sync the `MarketItemCreated` event `/src/contracts/marketplaceBoilerplate.sol` contract with your Moralis Server, making the tableName `MarketItems`
 ```jsx
 event MarketItemCreated (
   uint indexed itemId,
@@ -45,7 +37,7 @@ event MarketItemCreated (
 ```
 
 
-🚴‍♂️ Run your App:
+Run your App:
 ```sh
 yarn start
 ```
